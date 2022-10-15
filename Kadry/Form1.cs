@@ -63,7 +63,7 @@ namespace Kadry
             dgvEmployees.Columns.Add("City", "Miejscowość");
             dgvEmployees.Columns.Add("EmploymentDate", "Data zatrudnienia");
             dgvEmployees.Columns.Add("DismissalDate", "Data zwolnienia");
-            dgvEmployees.Columns.Add("EmployeeEarning", "Wynagrodzenie");
+            dgvEmployees.Columns.Add("EmployeeSalary", "Wynagrodzenie");
             dgvEmployees.Columns.Add("Comments", "Komentarz");
 
             dgvEmployees.Columns["Number"].Width = 50;
@@ -75,7 +75,7 @@ namespace Kadry
             dgvEmployees.Columns["City"].Width = 200;
             dgvEmployees.Columns["EmploymentDate"].Width = 100;
             dgvEmployees.Columns["DismissalDate"].Width = 100;
-            dgvEmployees.Columns["EmployeeEarning"].Width = 120;
+            dgvEmployees.Columns["EmployeeSalary"].Width = 120;
             dgvEmployees.Columns["Comments"].Width = 300;
         }
 
