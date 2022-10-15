@@ -42,7 +42,7 @@ namespace Kadry
                 item.SetElementValue("City", employee.City);
                 item.SetElementValue("EmploymentDate", employee.EmploymentDate);
                 item.SetElementValue("DismissalDate", employee.DismissalDate);
-                item.SetElementValue("EmployeeEarning", employee.EmployeeEarning);
+                item.SetElementValue("EmployeeEarning", employee.EmployeeSalary);
                 item.SetElementValue("Comments", employee.Comments);
             }
 
