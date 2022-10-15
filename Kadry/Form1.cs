@@ -25,11 +25,11 @@ namespace Kadry
             InitializeComponent();
 
             // Pobranie danych z pliku XML.
-            //var employees = _fileHelperExt.DeserializeFromFile();
+            var employees = _fileHelperExt.DeserializeFromFile();
 
             AddFilter();             // Utworzenie listy filtrów.
             SetDataGrid();            // Ustawienie siatki DataGridView.
-            //LoadDataAsync(employees); // Załaduj dane z pliku.
+            LoadDataAsync(employees); // Załaduj dane z pliku.
 
             // Zasubskrybowanie zdarzenia dla wybieranych opcji w kontrolce ComboBox "filter" ( koniecznie po wywołaniu metody AddFilter() ).
             tsFilterGroup.TextChanged += tsFilterGroup_TextChanged;
