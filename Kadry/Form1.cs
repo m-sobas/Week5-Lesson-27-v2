@@ -117,7 +117,7 @@ namespace Kadry
                                                     e.City,
                                                     e.EmploymentDate,
                                                     e.DismissalDate,
-                                                    e.EmployeeEarning,
+                                                    e.EmployeeSalary,
                                                     e.Comments
                                                   );
                         }));
@@ -133,7 +133,7 @@ namespace Kadry
                                                 e.City,
                                                 e.EmploymentDate,
                                                 e.DismissalDate,
-                                                e.EmployeeEarning,
+                                                e.EmployeeSalary,
                                                 e.Comments
                                               );
                     }

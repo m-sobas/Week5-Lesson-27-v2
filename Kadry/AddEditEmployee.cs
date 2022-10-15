@@ -50,7 +50,7 @@ namespace Kadry
             tbCity.Text             = employee.City.Trim();
             tbEmploymentDate.Text   = employee.EmploymentDate.ToString();
             tbDismissalDate.Text    = employee.DismissalDate.ToString();
-            tbEmployeeEarning.Text  = employee.EmployeeEarning.ToString().Trim();
+            tbEmployeeSalary.Text  = employee.EmployeeSalary.ToString().Trim();
             tbComments.Text         = employee.Comments.Trim();
         }
 
@@ -114,7 +114,7 @@ namespace Kadry
             if (e.KeyChar == '.') // Jeśli wciśnięty został klawisz '.' (kropka),
                 e.KeyChar = ',';  // to wprowadź znak ',' (przecinek).
 
-            if (e.KeyChar == ',' && tbEmployeeEarning.Text.Contains(",")) // Jeśli w polu tekstowym znajduje się już znak ',' (przecinek)
+            if (e.KeyChar == ',' && tbEmployeeSalary.Text.Contains(",")) // Jeśli w polu tekstowym znajduje się już znak ',' (przecinek)
                 e.Handled = true;                                         // to zablokuj dalsze wprowadzenie znaku.
 
             if (e.KeyChar == (int)8 || e.KeyChar == ',') // Jeśli wciśniętym klawiszem jest "Del" lub "Delete" lub znak "," (przecinek)
@@ -185,7 +185,7 @@ namespace Kadry
                         City            = tbCity.Text.Trim(),
                         EmploymentDate  = Convert.ToDateTime(tbEmploymentDate.Text),
                         DismissalDate   = Convert.ToDateTime(tbDismissalDate.Text),
-                        EmployeeEarning = tbEmployeeEarning.Text == "" ? Convert.ToDecimal(0.ToString("N")) : Convert.ToDecimal(Decimal.Parse(tbEmployeeEarning.Text).ToString("N")),
+                        EmployeeSalary  = tbEmployeeSalary.Text == "" ? Convert.ToDecimal(0.ToString("N")) : Convert.ToDecimal(Decimal.Parse(tbEmployeeSalary.Text).ToString("N")),
                         Comments        = tbComments.Text.Trim()
                     };
 
@@ -210,7 +210,7 @@ namespace Kadry
                         City            = tbCity.Text.Trim(),
                         EmploymentDate  = Convert.ToDateTime(tbEmploymentDate.Text),
                         DismissalDate   = Convert.ToDateTime(tbDismissalDate.Text),
-                        EmployeeEarning = tbEmployeeEarning.Text == "" ? Convert.ToDecimal(0.ToString("N")) : Convert.ToDecimal(Decimal.Parse(tbEmployeeEarning.Text).ToString("N")),
+                        EmployeeSalary  = tbEmployeeSalary.Text == "" ? Convert.ToDecimal(0.ToString("N")) : Convert.ToDecimal(Decimal.Parse(tbEmployeeSalary.Text).ToString("N")),
                         Comments        = tbComments.Text.Trim()
                     };
 

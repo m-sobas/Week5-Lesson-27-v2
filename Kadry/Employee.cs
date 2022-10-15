@@ -16,7 +16,7 @@ namespace Kadry
         public string City { get; set; }
         public DateTime? EmploymentDate { get; set; }
         public DateTime? DismissalDate { get; set; }
-        public decimal EmployeeEarning { get; set; }
+        public decimal EmployeeSalary { get; set; }
         public string Comments { get; set; }
     }
 }
