@@ -109,7 +109,7 @@ namespace Kadry
 
 
         // Obsługa zdarzenia przechwytująca wciskane klawisze w polu tekstowym "Wynagrodzenie" (walidacja danych).
-        private void tbEmployeeEarning_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbEmployeeSalary_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '.') // Jeśli wciśnięty został klawisz '.' (kropka),
                 e.KeyChar = ',';  // to wprowadź znak ',' (przecinek).

@@ -182,7 +182,7 @@
             this.tbEmployeeSalary.Size = new System.Drawing.Size(101, 26);
             this.tbEmployeeSalary.TabIndex = 11;
             this.tbEmployeeSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbEmployeeSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEmployeeEarning_KeyPress);
+            this.tbEmployeeSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEmployeeSalary_KeyPress);
             // 
             // tbComments
             // 
