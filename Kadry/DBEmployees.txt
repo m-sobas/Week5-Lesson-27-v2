@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <Id>1</Id>
+    <FirstName>Adam</FirstName>
+    <LastName>Majewski</LastName>
+    <Address>Polna 27</Address>
+    <PostCode>44-300</PostCode>
+    <City>Wodzisław Śląski</City>
+    <EmploymentDate>05-03-2021</EmploymentDate>
+    <DismissalDate />
+    <EmployeeEarning>2200.00</EmployeeEarning>
+    <Comments />
+  </Employee>
+  <Employee>
+    <Id>2</Id>
+    <FirstName>Konrad</FirstName>
+    <LastName>Witkowski</LastName>
+    <Address>Stanisława Lema 25/1</Address>
+    <PostCode>62-500</PostCode>
+    <City>Konin</City>
+    <EmploymentDate>13-04-2021</EmploymentDate>
+    <DismissalDate />
+    <EmployeeEarning>2350.00</EmployeeEarning>
+    <Comments />
+  </Employee>
+  <Employee>
+    <Id>3</Id>
+    <FirstName>Magdalena</FirstName>
+    <LastName>Majewska</LastName>
+    <Address>Leśna 123/25</Address>
+    <PostCode>09-410</PostCode>
+    <City>Płock</City>
+    <EmploymentDate>01-05-2021</EmploymentDate>
+    <DismissalDate />
+    <EmployeeEarning>2500.00</EmployeeEarning>
+    <Comments />
+  </Employee>
+  <Employee>
+    <Id>4</Id>
+    <FirstName>Robert</FirstName>
+    <LastName>Hoderski</LastName>
+    <Address>Mennicka 3/6</Address>
+    <PostCode>58-100</PostCode>
+    <City>Świdnica</City>
+    <EmploymentDate>21-05-2021</EmploymentDate>
+    <DismissalDate />
+    <EmployeeEarning>2200.00</EmployeeEarning>
+    <Comments />
+  </Employee>
+  <Employee>
+    <Id>5</Id>
+    <FirstName>Izabela</FirstName>
+    <LastName>Kosecka</LastName>
+    <Address>Arsynów 225</Address>
+    <PostCode>00-300</PostCode>
+    <City>Warszawa</City>
+    <EmploymentDate>05-06-2021</EmploymentDate>
+    <DismissalDate />
+    <EmployeeEarning>3200.00</EmployeeEarning>
+    <Comments />
+  </Employee>
+  <Employee>
+    <Id>6</Id>
+    <FirstName>Paweł</FirstName>
+    <LastName>Gadomski</LastName>
+    <Address>Karola  Miarki 22/3</Address>
+    <PostCode>58-500</PostCode>
+    <City>Jelenia Góra</City>
+    <EmploymentDate>20-07-2021</EmploymentDate>
+    <DismissalDate></DismissalDate>
+    <EmployeeEarning>2700.00</EmployeeEarning>
+    <Comments></Comments>
+  </Employee>
+</ArrayOfEmployee>
