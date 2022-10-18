@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -24,12 +25,22 @@ namespace Kadry
         {
             InitializeComponent();
 
-            // Pobranie danych z pliku XML.
-            var employees = _fileHelperExt.DeserializeFromFile();
+            List<Employee> employees = new List<Employee>();
 
-            AddFilter();             // Utworzenie listy filtrów.
+            if (!File.Exists(Program.dataBasePath))
+            {
+                MessageBox.Show("Brak pliku");
+                _fileHelperExt.SerializeToFile(null); // Jeśli plik z bazą nie istnieje, to go utwórz.
+            }
+            else
+            {
+                MessageBox.Show("Jest plik");
+                employees = _fileHelperExt.DeserializeFromFile(); // Pobierz dane z pliku XML.
+            }
+
+            AddFilter();              // Utworzenie listy filtrów.
             SetDataGrid();            // Ustawienie siatki DataGridView.
-            LoadDataAsync(employees); // Załaduj dane z pliku.
+            LoadDataAsync(employees); // Wypełnij siatkę danymi.
 
             // Zasubskrybowanie zdarzenia dla wybieranych opcji w kontrolce ComboBox "filter" ( koniecznie po wywołaniu metody AddFilter() ).
             tsFilterGroup.TextChanged += tsFilterGroup_TextChanged;

@@ -169,8 +169,15 @@ namespace Kadry
                         return;
                     }
 
-                    // Pobranie numeru ostatniego Id.
-                    int? maxId = employees.Select(x => x.Id).Max();
+                    int? maxId = null;
+
+                    try
+                    {
+                        maxId = employees.Select(x => x.Id).Max(); // Pobranie numeru ostatniego Id.
+                    }
+                    catch { };
+
+                    MessageBox.Show(maxId.ToString());
 
                     // Jeśli dane nie zwierają rekordów, to przypisz początkowe Id = 1, w przeciwnym razie zwiększ Id o 1.
                     int newId = maxId == null ? 1 : (int)maxId + 1;
@@ -183,8 +190,8 @@ namespace Kadry
                         Address         = tbAddress.Text.Trim(),
                         PostCode        = masked.Text.Trim(),
                         City            = tbCity.Text.Trim(),
-                        EmploymentDate  = Convert.ToDateTime(tbEmploymentDate.Text),
-                        DismissalDate   = Convert.ToDateTime(tbDismissalDate.Text),
+                        EmploymentDate  = !string.IsNullOrWhiteSpace(tbEmploymentDate.Text) ? Convert.ToDateTime(tbEmploymentDate.Text) : (DateTime?) null,
+                        DismissalDate   = !string.IsNullOrWhiteSpace(tbDismissalDate.Text) ? Convert.ToDateTime(tbDismissalDate.Text) : (DateTime?) null,
                         EmployeeSalary  = tbEmployeeSalary.Text == "" ? Convert.ToDecimal(0.ToString("N")) : Convert.ToDecimal(Decimal.Parse(tbEmployeeSalary.Text).ToString("N")),
                         Comments        = tbComments.Text.Trim()
                     };

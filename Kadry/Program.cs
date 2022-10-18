@@ -8,7 +8,7 @@ namespace Kadry
 {
     internal static class Program
     {
-        public static string dataBasePath = @"../../DBEmployees.txt";
+        public static string dataBasePath = @"..\..\DBEmployees.txt";
 
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
